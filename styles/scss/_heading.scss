@@ -1,0 +1,125 @@
+.heading {
+
+    
+    flex-flow: column wrap;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-family: 'Dancing Script', cursive;
+        order: 1;
+
+        
+
+        span {
+            color: $icon-color;
+            text-align: center;
+        }
+    }
+
+    i {
+        font-size: 35px;
+        color: $icon-color;
+        margin: 10px;
+        opacity: 0.3;
+        order: 2;
+    }
+
+    .nag {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+
+   
+
+    .search {
+        display: flex;
+        justify-content: center;
+        font-family: $font-main;
+        
+    
+        
+        form .search {
+
+            flex: 0 0 60%;
+            height: 40px;
+            box-sizing: border-box;
+            padding: 20px;
+            width: 400px;
+            border-radius: 5px;
+            border: 1px solid $box-shadow;
+            margin-right: 10px;
+            order: 3;
+            background-image: url("/images/s-icon.png");
+            background-repeat: no-repeat;
+            background-size: 22px;
+            background-position: 249px;
+            
+
+            
+            &:focus {
+                box-shadow: 0 0 15px $box-shadow;
+            }
+
+            
+
+        }
+
+        button.btn {
+            border-radius: 5px;
+            padding: 10px;
+            height: 40px;
+            border: 1px solid $box-shadow;
+            background-color: lighten($box-shadow, 20%);
+            font-family: $font-main;
+            order: 4;
+            cursor: pointer;
+
+
+
+            &:hover {
+                background-color: $box-shadow;
+                transition: 0.4s;
+            }
+        }
+    
+@media screen and (max-width: 668px) {
+    .heading {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 20px;
+
+        
+
+            h1 { 
+                margin: 20px;
+            }
+
+            .search {
+
+                form .search {
+                    background-image: url("/images/s-icon.png");
+                    background-repeat: no-repeat;
+                    background-size: 22px;
+                    background-position: 313px;
+                }
+            }
+       
+            
+
+    
+    }
+}
+
+}
+
+   
+
+}

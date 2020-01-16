@@ -1,0 +1,108 @@
+table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    
+    
+
+
+
+    th,
+    td {
+
+        padding: 10px;
+
+    
+    }
+
+    th {
+        background-color: darken($box-shadow, 20%);
+        color: black;
+        border-bottom: 2px solid $box-shadow;
+        
+    }
+
+    td {
+        border-top: 2px solid $box-shadow;
+    }
+
+    tr:hover {
+        background-color: darken($box-shadow, 30%);
+       
+    }
+
+    .icon-container {
+        
+        i {
+
+            text-decoration: none;
+            color: $icon-color;
+            opacity: 0.5;
+            cursor: pointer;
+
+           
+        }
+        i:hover {
+
+            color: white;
+            transition: 0.3s;
+        }
+
+    }
+
+
+      
+    tr:nth-child(even) {
+        background-color: darken($bg-color, 10%);;
+    }
+    
+}
+
+.pagination{
+
+    padding:20px;
+    margin:20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: $font-main;
+    font-size: 20px;
+    
+    & a:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    & a:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+  
+
+    a {
+        background-color: darken($bg-color, 40%);
+        padding: 8px 16px;
+        color: $font-color;
+        text-decoration: none;
+        transition: color 0.4s;
+        border: 1px solid darken(grey, 20%);
+
+        &:hover {
+            background-color: lighten($box-shadow, 5%);
+            opacity: 0.9;
+            color:black;
+        }
+
+        &.active {
+            background-color:$icon-color;
+            opacity: 0.4;
+            color:black;
+        }
+
+    
+       
+    }
+}

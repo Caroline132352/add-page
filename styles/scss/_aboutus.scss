@@ -1,0 +1,145 @@
+.id-user {
+    border: 2px solid grey;
+    background-color: darken($bg-color, 10%);
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+
+    .user-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+
+        .me {
+
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 30px;
+            order: 3;
+            align-items: center;
+            align-content: center;
+
+        }
+
+
+        p {
+            display: flex;
+            justify-content: space-around;
+            flex-flow: column wrap;
+            margin: 40px;
+            order: 1;
+            font-family: $font-main;
+
+
+
+            button {
+
+                width: 80px;
+                margin: 30px;
+                border-radius: 5px;
+                padding: 10px;
+                height: 40px;
+                border: 1px solid $box-shadow;
+                background-color: lighten($box-shadow, 20%);
+                font-family: $font-main;
+                cursor: pointer;
+
+                &:focus {
+                    box-shadow: 0 0 10px $box-shadow;
+                }
+
+                &:hover {
+
+                    background-color: $box-shadow;
+                    transition: 0.4s;
+                }
+            }
+
+        }
+
+
+    }
+
+    .user {
+        align-items: center;
+        margin: 10px;
+        padding: 20px;
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 668px) {
+
+    .id-user {
+
+        .user {
+            margin: 20px;
+
+        }
+
+        .user-text {
+
+            display: flex;
+            flex-flow: column wrap;
+
+
+            .me {
+                width: 300px;
+                height: 300px;
+                order: 2;
+
+
+            }
+
+
+
+            p {
+                order: 3;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .id-user {
+
+        .user {
+            margin: 10px;
+
+        }
+
+        .user-text {
+
+            display: flex;
+            flex-flow: column wrap;
+            font-size: 15px;
+
+
+            .me {
+                width: 200px;
+                height: 200px;
+                order: 2;
+
+
+            }
+
+
+
+            p {
+                order: 3;
+            }
+        }
+
+
+    }
+}
+

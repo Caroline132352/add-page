@@ -1,0 +1,20 @@
+//colors:
+
+$bg-color:  #232423;
+$box-shadow: #ebff00;
+$icon-color: #ffdf00;
+$font-color: #B0B0B0;
+
+//mixins:
+
+@mixin articles {
+    flex: 0 0 30%;
+    background-color: darken($bg-color, 10%);
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+
+//fonts
+$font-main:'Lora', serif;

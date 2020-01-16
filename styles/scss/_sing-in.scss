@@ -1,0 +1,111 @@
+body {
+    color: $font-color;
+}
+
+h1.head {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    background-color: darken($bg-color, 40%);
+    margin: 0;
+    padding: 50px;
+    box-shadow: 0 2px 10px $box-shadow;
+
+    span {
+        color: $icon-color;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: $font-main;
+    color: $box-shadow;
+    margin-top: 50px;
+    
+    
+}
+
+form.register {
+    border: 2px solid grey;
+    background-color: darken($bg-color, 10%);
+    padding: 100px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+    font-family: $font-main;
+
+    label {
+        margin: 4px;
+    }
+
+
+    input {
+        align-items: center;
+        margin: 2px;
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        background-color: darken(white, 5%);
+        font-family: $font-main;
+
+        &:focus {
+            border: 2px solid $box-shadow;
+            box-shadow: 0 0 5px $box-shadow;
+        }
+    }
+
+    .group {
+        display: inline;
+        margin: 10px;
+
+    }
+
+    .group2 {
+        margin: 10px;
+        display: inline;
+    }
+
+    button {
+        padding: 6px;
+        background-color: lighten(grey, 10%);
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-family: $font-main;
+
+        &:hover {
+            background-color: lighten($box-shadow, 20%);
+
+            border: 1px solid $box-shadow;
+
+        }
+    }
+}
+
+footer {
+    background-color: darken($bg-color, 20%);
+    text-align: center;
+    padding: 20px;
+    margin: 1px;
+    font-family: $font-main;
+    font-size: 15px;
+    margin-top: 100px;
+    color: $font-color;
+
+
+    .icon-container i {
+      
+        color: white;
+        font-size: 40px;
+        opacity: 0.7;
+        margin: 10px;
+  
+        &:hover {
+           color: $box-shadow;
+          
+        }
+  }
+}

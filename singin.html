@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sing in</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400i,700i&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <link rel="stylesheet" href="./FontAwesome/css/all.css">
+</head>
+
+<body>
+    <div class="heading">
+
+        <div class="part-one">
+
+            <div class="nag">
+                <a href="./index.html">
+                    <h1><span>My</span>Beautiful App</h1>
+                </a>
+                <i class="fas fa-feather-alt"></i>
+            </div>
+
+            <div class="search">
+                <form action="" class="search">
+                    <input type="text" id="search" name="search" placeholder="Search" class="search" width="600px">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="part-two">
+
+            <div class="nav-menu">
+
+                <ul>
+                    <a href="./index.html">
+                        <li><i class="fas fa-home"></i>Home Page</li>
+                    </a>
+
+                    <a href="./aboutus.html" target="blank">
+                        <li><i class="fas fa-users"></i>About us</li>
+                    </a>
+
+                    <a href="./singin.html" target="blank">
+                        <li class="active"><i class="fas fa-sign-in-alt"></i>Sing in</li>
+                    </a>
+                    <a href="./comments.html" target="blank">
+                        <li><i class="fas fa-comments"></i>Comments</li>
+                    </a>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="./index.html">
+                    <li><i class="fas fa-home"></i>Home Page</li>
+                </a>
+
+                <a href="./aboutus.html" target="blank">
+                    <li><i class="fas fa-users"></i>About us</li>
+                </a>
+
+                <a href="./singin.html" target="blank">
+                    <li class="active"><i class="fas fa-sign-in-alt"></i>Sing in</li>
+                </a>
+                <a href="./comments.html" target="blank">
+                    <li><i class="fas fa-comments"></i>Comments</li>
+                </a>
+            </div>
+          </div>
+
+
+
+    </div>
+
+    
+    <div class="registration">
+        
+        <h2>Registration:</h2>
+
+        <form action="/" class="register" method = "GET">
+          
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="Name:" required>
+            <label for="surname">Surname:</label>
+            <input id="surname" name="surname" type="text" placeholder="Surname:" required>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="Email:" required>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" placeholder="Password:" required>
+            <label for="gender">Gender:</label>
+            <div class="group">
+                <label for="woman">Woman</label>
+                <input id="plec" name="plec" type="radio" required>
+                <label for="man">Man:</label>
+                <input id="plec" name="plec" type="radio" required>
+            </div>
+            <button type="submit">Submit</button>
+            <div class="group2">
+                <label for="remember me">Remember me</label>
+                <input id="remember me" name="remember me" type="checkbox">
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <p>&copy; Karolina Szeliga 2019</p>
+        <div class="icon-container">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="./scripts/app.js"></script>
+
+</body>
+
+</html>
