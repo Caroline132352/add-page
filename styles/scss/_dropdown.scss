@@ -13,7 +13,7 @@
      outline-style: none;
  }
 
- .dropbtn>div {
+ .dropbtn >div {
      width: 35px;
      height: 5px;
      background-color: $icon-color;
@@ -77,11 +77,11 @@
  }
 
  /* Change the background color of the dropdown button when the dropdown content is shown */
- .dropdown:hover .dropbtn>div {
+ .dropdown:hover .dropbtn >div {
 
      background-color: lighten($bg-color, 20%);
      transition: 0.4s;
 
  }
 
- .show {display:block;}
+ .show {display: block;}

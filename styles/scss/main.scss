@@ -215,9 +215,9 @@ footer {
 
 
   
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 992px) {
     .dropdown {
-        display: none;
+        display: block;
     }
   }
 
@@ -286,11 +286,7 @@ footer {
         margin: 40px;
     }
 
-    .dropdown {
-        display: none;
-    }
-    
-
+ 
 }
 
 
@@ -318,9 +314,6 @@ footer {
         }
     }
 
-    .dropdown {
-        display: none;
-    }
 }
 
 
@@ -392,9 +385,6 @@ footer {
                 display: none;
             }
     
-            .dropdown {
-                display: block;
-            }
         
         }
 
